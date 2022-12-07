@@ -10,6 +10,7 @@ describe('Tests index', function() {
         test.number(result.statusCode).is(200);
         test.string(result.body).contains('Congratulations');
         test.value(result).hasHeader('content-type', 'text/html');
+        console.log("test Complete");
         done();
       } catch(error) {
         done(error);
